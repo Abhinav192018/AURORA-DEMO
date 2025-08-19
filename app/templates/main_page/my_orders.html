@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}My Orders | Aurora Cadence{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/my_orders.css' %}">
+
+
+
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="text-white">My Orders</h1>
+        <p class="text-white">Track and manage your purchase history</p>
+    </div>
+
+    <!-- Orders Loop Starts -->
+    <div class="orders-grid">
+
+        <!-- Order Card -->
+        <!-- Dummy Order 1 -->
+<div class="order-card">
+    <div class="order-header">
+        <div>
+            <div class="order-id">Order ID: #101</div>
+            <div class="order-date">Placed on July 10, 2025</div>
+        </div>
+        <div class="order-status">
+            <span class="text-white opacity-75">Expected Delivery:</span> July 15 - July 17
+        </div>
+    </div>
+
+    <div class="products-list">
+        <div class="product-item">
+            <div class="product-image" style="overflow: hidden;">
+                <img src="https://i.pinimg.com/736x/72/da/3c/72da3c33dd6f10a501718268b607af16.jpg" alt="product image" style="height: 60px; width: 60px;">
+            </div>
+            <div class="product-details">
+                <div class="product-name">Golden Earrings</div>
+                <div class="product-info">Quantity: 1</div>
+            </div>
+            <div class="product-price">₹799</div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-image" style="overflow: hidden;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo5Gn1IktT9WzpeO_TB9OV0LWFWWzKka3upQ&s" alt="product image" style="height: 60px; width: 60px;">
+            </div>
+            <div class="product-details">
+                <div class="product-name">Silver Pendant</div>
+                <div class="product-info">Quantity: 2</div>
+            </div>
+            <div class="product-price">₹1200</div>
+        </div>
+    </div>
+
+    <div class="order-total">
+        <span class="total-label">Total Amount:</span>
+        <span class="total-amount">₹1999</span>
+    </div>
+</div>
+
+<!-- Dummy Order 2 -->
+<div class="order-card">
+    <div class="order-header">
+        <div>
+            <div class="order-id">Order ID: #102</div>
+            <div class="order-date">Placed on July 22, 2025</div>
+        </div>
+        <div class="order-status">
+            <span class="text-white opacity-75">Expected Delivery:</span> July 28 - July 30
+        </div>
+    </div>
+
+    <div class="products-list">
+        <div class="product-item">
+            <div class="product-image" style="overflow: hidden;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo5Gn1IktT9WzpeO_TB9OV0LWFWWzKka3upQ&s" alt="product image" style="height: 60px; width: 60px;">
+            </div>
+            <div class="product-details">
+                <div class="product-name">Crystal Bangle</div>
+                <div class="product-info">Quantity: 1</div>
+            </div>
+            <div class="product-price">₹999</div>
+        </div>
+    </div>
+
+    <div class="order-total">
+        <span class="total-label">Total Amount:</span>
+        <span class="total-amount">₹2499</span>
+    </div>
+</div>
+
+
+    </div>
+</div>
+{% endblock %}

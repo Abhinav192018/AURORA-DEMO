@@ -1,0 +1,93 @@
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  background: black;
+}
+
+.order-card {
+  border: 1px solid orange;
+  background-color: #303030;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.order-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.6);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed orange;
+  padding-bottom: 0.5rem;
+}
+
+.order-id,
+.order-date {
+  color: #f8f8f8;
+  font-size: 0.95rem;
+}
+
+.order-status {
+  color: #ffa500;
+  font-weight: 500;
+}
+
+.products-list {
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid orange;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-name {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.product-info {
+  color: #cccccc;
+  font-size: 0.85rem;
+}
+
+.product-price {
+  color: #ffa500;
+  font-weight: 600;
+}
+
+.order-total {
+  border-top: 1px solid #ffa500;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: orange;
+  font-weight: bold;
+}
+
+.header p {
+  color: #ccc;
+}
